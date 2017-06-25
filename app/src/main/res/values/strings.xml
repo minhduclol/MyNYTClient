@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyNYTClient</string>
+    <string name="title_activity_article_item">ArticleItem</string>
+</resources>
