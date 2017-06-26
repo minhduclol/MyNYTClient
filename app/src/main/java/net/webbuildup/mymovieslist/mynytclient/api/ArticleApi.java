@@ -1,6 +1,6 @@
 package net.webbuildup.mymovieslist.mynytclient.api;
 
-import net.webbuildup.mymovieslist.mynytclient.model.SearchRequest;
+import net.webbuildup.mymovieslist.mynytclient.model.SearchResult;
 
 import java.util.Map;
 
@@ -14,5 +14,5 @@ import retrofit2.http.QueryMap;
 
 public interface ArticleApi {
     @GET("articlesearch.json")
-    Call<SearchRequest> search(@QueryMap(encoded = true) Map<String, String> options);
+    Call<SearchResult> search(@QueryMap(encoded = true) Map<String, String> options);
 }

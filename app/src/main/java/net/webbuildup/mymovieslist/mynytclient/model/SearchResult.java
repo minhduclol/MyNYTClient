@@ -13,6 +13,6 @@ public class SearchResult {
     private List<Article> articles;
 
     public List<Article> getArticles() {
-        return articles;
+        return this.articles;
     }
 }

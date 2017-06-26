@@ -22,14 +22,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RetrofitUtil {
-    private static final String BASE_URL = "https://api.nytimes.com/svc/search/v2/";
     private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     private static final Gson GSON = new Gson();
     public static Retrofit get() {
         return new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client())
-                .baseUrl(BASE_URL)
+                .baseUrl(Constant.BASE_URL)
                 .build();
     }
     public static OkHttpClient client() {
